@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Porta-negócios</string>
     <string name="label_business_cards">Cartões de Visita</string>
+    <string name="label_new_business_card">Novo cartão</string>
+    <string name="hint_name_input">Nome</string>
+    <string name="hint_phone_input">Telefone</string>
+    <string name="hint_email_input">E-mail</string>
+    <string name="hint_business_name_input">Nome da empresa</string>
+    <string name="hint_card_color_input">Cor do cartão</string>
 </resources>
