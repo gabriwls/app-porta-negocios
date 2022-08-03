@@ -8,4 +8,5 @@
     <string name="hint_business_name_input">Nome da empresa</string>
     <string name="hint_card_color_input">Cor do cartão</string>
     <string name="tst_show_success">Cartão cadastrado!</string>
+    <string name="label_share">Compartilhar</string>
 </resources>
