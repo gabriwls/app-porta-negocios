@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Workspace/app-porta-negocios/app/src/main/res/drawable/ic_add.xml" value="0.186" />
+        <entry key="..\:/Workspace/app-porta-negocios/app/src/main/res/drawable/ic_business.xml" value="0.1" />
+        <entry key="..\:/Workspace/app-porta-negocios/app/src/main/res/drawable/ic_email.xml" value="0.186" />
+        <entry key="..\:/Workspace/app-porta-negocios/app/src/main/res/drawable/ic_phone.xml" value="0.185" />
         <entry key="..\:/Workspace/app-porta-negocios/app/src/main/res/layout/activity_add_business_card.xml" value="0.33" />
         <entry key="..\:/Workspace/app-porta-negocios/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Workspace/app-porta-negocios/app/src/main/res/layout/item_business_card.xml" value="0.4718875502008032" />
+        <entry key="..\:/Workspace/app-porta-negocios/app/src/main/res/layout/item_business_card.xml" value="0.33" />
       </map>
     </option>
   </component>

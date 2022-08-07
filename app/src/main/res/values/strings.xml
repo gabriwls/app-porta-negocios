@@ -1,12 +1,21 @@
 <resources>
     <string name="app_name">Porta-negócios</string>
+
     <string name="label_business_cards">Cartões de Visita</string>
-    <string name="label_new_business_card">Novo cartão</string>
+    <string name="label_new_business_card">Novo cartão de visita</string>
+    <string name="label_share">Compartilhar</string>
+
     <string name="hint_name_input">Nome</string>
     <string name="hint_phone_input">Telefone</string>
     <string name="hint_email_input">E-mail</string>
     <string name="hint_business_name_input">Nome da empresa</string>
-    <string name="hint_card_color_input">Cor do cartão</string>
+
     <string name="tst_show_success">Cartão cadastrado!</string>
-    <string name="label_share">Compartilhar</string>
+
+    <string name="cd_new_card">Adicionar novo cartão</string>
+    <string name="cd_email_icon">Ícone de e-mail</string>
+    <string name="cd_phone_icon">Ícone de telefone</string>
+    <string name="cd_person_icon">Ícone de pessoa</string>
+    <string name="cd_business_icon">Ícone de empresa</string>
+    <string name="cd_close_button">Ícone de fechamento</string>
 </resources>

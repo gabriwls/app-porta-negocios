@@ -6,28 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/abToolbar"
+        style="@style/ToolbarStyle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_default"
-        android:text="@string/label_business_cards"
-        android:textSize="@dimen/font_size_default"
-        android:textStyle="bold"
+        android:background="@color/primary_500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_pn_logo"
+        app:title="@string/app_name"
+        app:titleCentered="true" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCards"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="@dimen/margin_default"
-        android:layout_marginLeft="@dimen/margin_default"
-        android:layout_marginRight="@dimen/margin_default"
+        android:layout_height="@dimen/dimen_zero"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/abToolbar"
         tools:listitem="@layout/item_business_card" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -35,8 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_default"
+        android:contentDescription="@string/cd_new_card"
+        android:src="@drawable/ic_add_card"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_add" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,14 +27,13 @@ class BusinessCardAdapter :
     var listenerShare: (View) -> Unit = {}
 
     inner class ViewHolder(
-        private val binding: ItemBusinessCardBinding
+        private val binding: ItemBusinessCardBinding,
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: BusinessCard) {
             binding.tvName.text = item.nome
             binding.tvPhone.text = item.telefone
             binding.tvEmail.text = item.email
             binding.tvNomeEmpresa.text = item.empresa
-            binding.mcvContent.setCardBackgroundColor(Color.parseColor(item.fundoPersonalizado))
             binding.mcvContent.setOnClickListener {
                 listenerShare(it)
             }

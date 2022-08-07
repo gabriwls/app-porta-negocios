@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_default_quarter">4dp</dimen>
     <dimen name="margin_default_half">8dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_default_extra">24dp</dimen>
+    <dimen name="margin_default_extra_plus">36dp</dimen>
+
+    <dimen name="dimen_zero">0dp</dimen>
+
     <dimen name="font_size_default">24sp</dimen>
 </resources>

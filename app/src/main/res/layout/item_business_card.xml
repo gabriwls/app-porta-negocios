@@ -7,13 +7,15 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/mcvContent"
+        style="@style/CardViewStyle"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="@dimen/margin_default"
+        android:layout_height="@dimen/dimen_zero"
+        android:layout_marginHorizontal="@dimen/margin_default_extra"
+        android:layout_marginVertical="@dimen/margin_default"
         android:checkable="true"
         android:clickable="true"
         android:focusable="true"
-        app:cardCornerRadius="@dimen/margin_default"
+        app:cardCornerRadius="@dimen/margin_default_half"
         app:cardElevation="@dimen/margin_default_half"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="16:9"
@@ -21,40 +23,89 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/margin_default">
+            android:layout_marginHorizontal="@dimen/margin_default"
+            android:layout_marginVertical="20dp">
+
+            <ImageView
+                android:id="@+id/ivName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cd_person_icon"
+                android:src="@drawable/ic_person"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/icons_tint" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_default_half"
+                android:layout_marginLeft="@dimen/margin_default_half"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/ivName"
+                app:layout_constraintStart_toEndOf="@id/ivName"
                 tools:text="Nome" />
+
+            <ImageView
+                android:id="@+id/ivPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_default_quarter"
+                android:layout_marginTop="@dimen/margin_default_quarter"
+                android:contentDescription="@string/cd_phone_icon"
+                android:src="@drawable/ic_phone"
+                app:layout_constraintStart_toStartOf="@id/ivName"
+                app:layout_constraintTop_toBottomOf="@id/ivName"
+                app:tint="@color/icons_tint" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvPhone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvName"
+                app:layout_constraintBottom_toBottomOf="@id/ivPhone"
+                app:layout_constraintStart_toStartOf="@id/tvName"
                 tools:text="Telefone" />
+
+            <ImageView
+                android:id="@+id/ivEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_default_quarter"
+                android:layout_marginTop="@dimen/margin_default_quarter"
+                android:contentDescription="@string/cd_email_icon"
+                android:src="@drawable/ic_email"
+                app:layout_constraintStart_toStartOf="@id/ivName"
+                app:layout_constraintTop_toBottomOf="@id/ivPhone"
+                app:tint="@color/icons_tint" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvPhone"
+                app:layout_constraintBottom_toBottomOf="@id/ivEmail"
+                app:layout_constraintStart_toStartOf="@id/tvName"
                 tools:text="E-mail" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cd_business_icon"
+                android:src="@drawable/ic_business"
+                app:layout_constraintBottom_toBottomOf="@id/tvNomeEmpresa"
+                app:layout_constraintStart_toStartOf="@id/ivName"
+                app:tint="@color/icons_tint" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvNomeEmpresa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:text="Nome da empresa" />
